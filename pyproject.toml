@@ -47,3 +47,18 @@ find = {}  # Scanning implicit namespaces is active by default
 
 [tool.setuptools.dynamic]
 version = {attr = "dwave.plugins.torch.__version__"}
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".github",
+    ".circleci",
+    "tests",
+    "releasenotes",
+    "examples",
+    "venv",
+    ".venv",
+]
+
+[tool.ruff.lint]
+select = ["S"]
